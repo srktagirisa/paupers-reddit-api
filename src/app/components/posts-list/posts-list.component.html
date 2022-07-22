@@ -1,0 +1,4 @@
+<div *ngFor="let postsItem of postData.children">
+    {{postsItem.data.title}}
+    <app-posts-items [childData]="postsItem.data"></app-posts-items>
+</div>
